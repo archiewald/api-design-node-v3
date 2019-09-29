@@ -1,6 +1,8 @@
 export const getOne = model => async (req, res) => {}
 
-export const getMany = model => async (req, res) => {}
+export const getMany = model => async (req, res) => {
+  res.send({ message: 'hello' })
+}
 
 export const createOne = model => async (req, res) => {}
 
