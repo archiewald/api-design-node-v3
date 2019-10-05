@@ -1,6 +1,5 @@
 import { getOne, getMany, createOne, updateOne, removeOne } from '../crud'
 import { List } from '../../resources/list/list.model'
-import { User } from '../../resources/user/user.model'
 import mongoose from 'mongoose'
 
 describe('crud controllers', () => {
@@ -49,7 +48,7 @@ describe('crud controllers', () => {
 
       const res = {
         status(status) {
-          expect(status).toBe(400)
+          expect(status).toBe(404)
           return this
         },
         end() {
